@@ -1,7 +1,8 @@
-﻿#include <iostream>
+#include <iostream>
 #include <fstream>
 #include <string>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -230,6 +231,9 @@ int main() {
             string filename;
             cout << "Enter N: ";
             cin >> N;
+
+            cout << "Enter the filename: ";
+            cin >> filename;
 
             displayFirstNFromFile(filename, N);
             break;
